@@ -1,0 +1,36 @@
+{
+  "name": "san-component",
+  "version": "0.1.1",
+  "description": "",
+  "main": "dist/index.umd.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "yarn run clear && yarn run rollup",
+    "rollup": "rollup -c",
+    "clear": "rimraf ./dist",
+    "prepublish": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinzhan/san-component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinzhan/san-component/issues"
+  },
+  "homepage": "https://github.com/jinzhan/san-component#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.33.1",
+    "san": "^3.9.0"
+  },
+  "peerDependencies": {
+    "san": "^3.9.0"
+  }
+}
