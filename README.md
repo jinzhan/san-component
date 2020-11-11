@@ -1,6 +1,20 @@
 # san-component
 
-对san.Component的增强，方便大型项目定义全局组件。
+对san.Component的增强，方便大型项目定义全局组件和注入一些全局方法。
+
+## Install
+
+Install with npm:
+
+```
+npm install san-component
+```
+
+Install with yarn:
+
+```
+yarn add san-component
+```
 
 ## How to use
 
