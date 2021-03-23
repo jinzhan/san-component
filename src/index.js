@@ -102,3 +102,19 @@ export const registerComponents = components => {
 export const registerMixins = (mixins, Component = SanComponent) => {
     mixin(Component, mixins);
 };
+
+
+/**
+* 类似Vue的vm.$root
+*
+* @param {Object} comp 组件实例
+* @return {Object} 当前组件树的根实例。如果当前实例没有父实例，此实例将会是其自己
+*/
+const getRoot = comp => {
+    let root;
+    while(comp) {
+        root = comp;
+        comp = comp.parent;
+    }
+    return root;
+};
